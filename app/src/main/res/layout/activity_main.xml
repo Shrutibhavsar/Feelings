@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.Material.TextView"
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+        android:text="HOW YOU FEELING ??"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <ImageButton
+        android:id="@+id/happy"
+        android:layout_width="154dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintEnd_toStartOf="@+id/sad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:srcCompat="@drawable/happy" />
+
+    <ImageButton
+        android:id="@+id/neutral"
+        android:layout_width="170dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/angry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3"
+        app:srcCompat="@drawable/netural" />
+
+    <ImageButton
+        android:id="@+id/sad"
+        android:layout_width="160dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/happy"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
+        app:srcCompat="@drawable/sadie" />
+
+    <ImageButton
+        android:id="@+id/angry"
+        android:layout_width="182dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/neutral"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine4"
+        app:srcCompat="@drawable/angry" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="129dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:text="HAPPY"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="134dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="SAD"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine3"
+        android:layout_width="172dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="NEUTRAL"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/happy" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine4"
+        android:layout_width="147dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="ANGRY"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextMultiLine3"
+        app:layout_constraintTop_toBottomOf="@+id/sad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
